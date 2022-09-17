@@ -76,7 +76,7 @@ app.get("/games/:id/ads", async (request, response) => {
                 ...ad,
                 weekDays: ad.weekDays.split(","),
                 hourstart: ConvertMinutesToHourString(ad.hourstart),
-                hourend: ConvertMinutesToHourString(ad.hourEnd),
+                hourEnd: ConvertMinutesToHourString(ad.hourEnd),
             }
         })
     )
